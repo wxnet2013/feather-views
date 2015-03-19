@@ -1,5 +1,5 @@
 {
-  "name": "koa-views",
+  "name": "feather-views",
   "version": "3.0.0",
   "description": "Template rendering middleware for koa",
   "main": "index.js",

@@ -54,6 +54,9 @@ module.exports = function (path, opts) {
 
     this.render = function *(view, locals) {
       var ext = opts.default;
+	  locals.partials = locals.partials || {};
+	  locals.partials['yield'] = view;
+	  view = 'layout';
 
       if(view[view.length - 1] === '/'){
         view += 'index';
